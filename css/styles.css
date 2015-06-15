@@ -1,0 +1,41 @@
+/**
+ * Name: styles.css
+ * Date: Mon 15 June 2015
+ * Author: Patricia Losada Estrella
+ * Creative Commons License <http://creativecommons.org/licenses/by-sa/3.0/>
+ */
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	overflow: auto;
+	width: 960px;
+}
+
+
+/***** ----- Header ----- *****/
+
+header {
+	background-color: #FD7F25;
+}
+
+header ul li {
+	display: inline;
+}
+
+header ul li a {
+	text-decoration: none;
+	padding: 5px 15px 5px 15px;
+}
+
+
+/***** ----- Footer ----- *****/
+
+footer {
+	background-color: #C6621A;
+}
