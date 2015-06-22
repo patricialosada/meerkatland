@@ -1,7 +1,7 @@
 /**
  * Name: styles.css
- * Date: Mon 15 June 2015
- * Author: Patricia Losada Estrella
+ * Date: 15/06/2015
+ * Author: Patricia Losada Estrella <patrilosada92@gmail.com>
  * Creative Commons License <http://creativecommons.org/licenses/by-sa/3.0/>
  */
 
@@ -10,6 +10,13 @@
     margin: 0;
     padding: 0;
 }
+
+ body {
+    background-color: #fff;
+    color: #333;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-weight: normal;
+ }
 
 .container {
     margin: 0 auto;
@@ -24,30 +31,67 @@ header {
     background-color: #FD7F25;
 }
 
+header .container {
+    padding: 20px 0;
+}
+
 header ul {
-    margin: 30px 0 15px 0;
+    float: left;
+    margin-top: 20px;
 }
 
 header ul li {
-    display: inline;
+    float: left;
+    list-style-type: none;
 }
 
 header ul li a {
     background-color: #9C4D13;
     border-radius: 5px;
     color: #fff;
+    margin-right: 10px;
     padding: 5px 15px;
     text-decoration: none;
 }
 
-header a img {
-    float: right;
-    margin: -45px 0 15px 0;
+header ul li a:hover {
+    background-color: #C6621A;
 }
 
+header .logo {
+    float: right;
+}
+
+
+/***** ----- Content ----- *****/
+
+.banner p a {
+    background-color: #9C4D13;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    height: 100px;
+    margin: 0 0 20px 20px;
+    padding: 25px 20px;
+    text-decoration: none;
+    width: 360px;
+}
+
+.container img {
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.container p {
+    background-color: #9C4D13;
+    color: #fff;
+    padding: 5px 0 5px 10px;
+    width: 580px;
+}
 
 /***** ----- Footer ----- *****/
 
 footer {
     background-color: #C6621A;
+    margin-top: 20px;
 }
