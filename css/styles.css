@@ -1,7 +1,7 @@
 /**
  * Name: styles.css
- * Date: Mon 15 June 2015
- * Author: Patricia Losada Estrella
+ * Date: 15/06/2015
+ * Author: Patricia Losada Estrella <patrilosada92@gmail.com>
  * Creative Commons License <http://creativecommons.org/licenses/by-sa/3.0/>
  */
 
@@ -10,6 +10,19 @@
     margin: 0;
     padding: 0;
 }
+
+/**
+ * NOTA:
+ * Recuerda setear siempre los resets al principio. Lo has hecho con el * que le quitas el margin etc...
+ * Tienes que hacer siempre lo primero eso y el body. El body tag siempre debe contener la fuente por defecto
+ * para todo el proyecto y el color de fondo de la web.
+ */
+
+ body {
+    background-color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-weight: normal;
+ }
 
 .container {
     margin: 0 auto;
@@ -24,30 +37,83 @@ header {
     background-color: #FD7F25;
 }
 
-header ul {
-    margin: 30px 0 15px 0;
+/**
+ * NOTA:
+ * He añadido este selector porque de este modo tiene padding siempre arriba y abajo
+ * así los elementos de dentro estarán siempre espaciados 
+ */
+header .container {
+    padding: 20px 0;
 }
 
+header ul {
+    float: left;
+    margin-top: 20px;
+}
+
+/**
+ * NOTA:
+ * Utiliza float en lugar de inline.
+ * Mírate este link que explica estas cosas:https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+ */
 header ul li {
-    display: inline;
+    float: left;
+    list-style-type: none;
 }
 
 header ul li a {
     background-color: #9C4D13;
     border-radius: 5px;
     color: #fff;
+    margin-right: 10px;
     padding: 5px 15px;
     text-decoration: none;
 }
 
-header a img {
-    float: right;
-    margin: -45px 0 15px 0;
+header ul li a:hover {
+    background-color: #C6621A;
 }
 
+/**
+ * NOTA:
+ * No uses márgenes negativos!
+ * Utiliza clases para cosas tan importantes como el logo, 
+ * si tuvieses un una imagen dentro de uno de los links del header esto también afectaría!
+ */
+header .logo {
+    float: right;
+}
+
+
+/***** ----- Content ----- *****/
+
+.banner p a {
+    background-color: #9C4D13;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    height: 100px;
+    margin: 0 0 20px 20px;
+    padding: 25px 20px;
+    text-decoration: none;
+    width: 360px;
+}
+
+.container img {
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.container p {
+    background-color: #9C4D13;
+    color: #fff;
+    padding: 5px 0 5px 10px;
+    width: 580px;
+}
 
 /***** ----- Footer ----- *****/
 
 footer {
     background-color: #C6621A;
+    margin-top: 20px;
 }
