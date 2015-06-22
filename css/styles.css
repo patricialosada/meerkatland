@@ -11,15 +11,9 @@
     padding: 0;
 }
 
-/**
- * NOTA:
- * Recuerda setear siempre los resets al principio. Lo has hecho con el * que le quitas el margin etc...
- * Tienes que hacer siempre lo primero eso y el body. El body tag siempre debe contener la fuente por defecto
- * para todo el proyecto y el color de fondo de la web.
- */
-
  body {
     background-color: #fff;
+    color: #333;
     font-family: Helvetica Neue, Helvetica, Arial;
     font-weight: normal;
  }
@@ -37,11 +31,6 @@ header {
     background-color: #FD7F25;
 }
 
-/**
- * NOTA:
- * He añadido este selector porque de este modo tiene padding siempre arriba y abajo
- * así los elementos de dentro estarán siempre espaciados 
- */
 header .container {
     padding: 20px 0;
 }
@@ -51,11 +40,6 @@ header ul {
     margin-top: 20px;
 }
 
-/**
- * NOTA:
- * Utiliza float en lugar de inline.
- * Mírate este link que explica estas cosas:https://css-tricks.com/fighting-the-space-between-inline-block-elements/
- */
 header ul li {
     float: left;
     list-style-type: none;
@@ -74,12 +58,6 @@ header ul li a:hover {
     background-color: #C6621A;
 }
 
-/**
- * NOTA:
- * No uses márgenes negativos!
- * Utiliza clases para cosas tan importantes como el logo, 
- * si tuvieses un una imagen dentro de uno de los links del header esto también afectaría!
- */
 header .logo {
     float: right;
 }
