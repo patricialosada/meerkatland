@@ -93,5 +93,33 @@ header .logo {
 
 footer {
     background-color: #C6621A;
+    color: #fff;
     margin-top: 20px;
+}
+
+.column {
+    float: left;
+}
+
+.column h3 {
+    border-bottom: 1px solid #fff;
+    margin: 15px 10px 15px 0;
+    padding-right: 70px;
+}
+
+.column ul {
+    margin-bottom: 100px;
+}
+
+.column ul li {
+    list-style-type: none;
+}
+
+.column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.column ul li a:hover {
+    color: #523C28;
 }
