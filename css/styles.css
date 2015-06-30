@@ -14,9 +14,27 @@
  body {
     background-color: #fff;
     color: #333;
-    font-family: Helvetica Neue, Helvetica, Arial;
-    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
  }
+
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+ }
+
+form input[type="text"] {
+    margin: 20px 20px 20px 0;
+    padding: 5px 40px 5px 20px;
+}
+
+
+form input[type="submit"] {
+    background-color: #FD7F26;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 7px 18px;
+}
 
 .container {
     margin: 0 auto;
@@ -78,20 +96,53 @@ header .logo {
 }
 
 .container img {
-    float: left;
-    margin: 20px 0 0 0;
 }
 
 .container p {
     background-color: #9C4D13;
     color: #fff;
-    padding: 5px 0 5px 10px;
-    width: 580px;
 }
 
 /***** ----- Footer ----- *****/
 
 footer {
     background-color: #C6621A;
+    color: #fff;
     margin-top: 20px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column:last-child {
+    width: 50%;
+}
+
+.column h3 {
+    border-bottom: 1px solid #fff;
+    margin: 15px 10px 15px 0;
+    padding-right: 70px;
+}
+
+.column p {
+    background-color: #C6621A;
+}
+
+.column ul {
+    margin-bottom: 100px;
+}
+
+.column ul li {
+    list-style-type: none;
+}
+
+.column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.column ul li a:hover {
+    color: #523C28;
 }
